@@ -1,0 +1,7 @@
+{
+	"precheck": {
+		"usingAny": false,
+		"PORT": -1
+	},
+	"PORTInfo": {}
+}
