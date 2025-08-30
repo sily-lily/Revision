@@ -23,5 +23,5 @@ app.get("/", (_, response) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Serving information on PORT:${PORT}`);
+  console.log(`Serving information on http://localhost:${PORT}`);
 });

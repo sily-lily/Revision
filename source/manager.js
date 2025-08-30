@@ -92,7 +92,7 @@ class PORTManager {
         PORT.uses = -1;
         precheck.usingAny = false;
         precheck.PORT = -1;
-        console.log(`Banned PORT being reusable. Exceeded ${this.maxPORTLimit} use${this.maxPORTLimit > 1 ? 's' : ''}! (${PORT.PORT})`);
+        console.log(`Banned PORT from being reusable. Exceeded ${this.maxPORTLimit} use${this.maxPORTLimit > 1 ? 's' : ''}! (${PORT.PORT})`);
       }
     }
 

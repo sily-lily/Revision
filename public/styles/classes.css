@@ -1,0 +1,43 @@
+.noto-sans-jp {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.center {
+    text-align: center;
+}
+
+.frame-container {
+    position: relative;
+    height: 100vh; /* full viewport height */
+}
+
+.frame {
+    position: absolute;
+    margin-top: 100px;
+    border: rgb(35, 35, 35) 2px dashed;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 40px;
+    background-color: rgb(20, 20, 20);
+    transition: 0.2s;
+}
+
+.frame:hover {
+    transition: 0.2s;
+    border: rgb(50, 50, 50) 2px dashed;
+}
+
+.no-cursor {
+    caret-color: transparent;
+}
+
+.center-xy {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}

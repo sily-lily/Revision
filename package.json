@@ -1,6 +1,6 @@
 {
   "name": "revision",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A brand new way to bypass censorship using a dynamic PORT system",
   "main": "./source/server.js",
   "scripts": {

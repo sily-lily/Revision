@@ -1,6 +1,6 @@
 // Source of function: https://chatgpt.com/
-function RNG(minimum, maximum) {
-  return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+function RNG() {
+  return Math.floor(Math.random() * (65535 - 100) + 100);
 }
 
 module.exports = {
