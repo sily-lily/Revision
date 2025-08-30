@@ -3,6 +3,7 @@ const { RNG } = require("./tools");
 const path = require("node:path");
 
 class PORTManager {
+  maxPORTLimit = JSON.parse(readFileSync(path.join("settings.json"), "utf-8")).maxPORTLimit;
   isBanned(PORT) {
     if (!PORT || PORT.length <= 0) {
       throw new Error(`Couldn't identify if "${PORT}" is banned.`);
@@ -76,7 +77,7 @@ class PORTManager {
         }
       } else if ((precheck.usingAny && precheck.PORT !== -1)) {
         if (!PORTInfo[precheck.PORT]) return;
-        if (!PORTInfo[precheck.PORT].banned || !PORTInfo[precheck.PORT].uses > 3) {
+        if (!PORTInfo[precheck.PORT].banned || !PORTInfo[precheck.PORT].uses > this.maxPORTLimit - 1) {
           console.log("Using predetermined PORT for efficiency.");
           PORTInfo[precheck.PORT].uses += 1;
           return precheck.PORT;
@@ -85,13 +86,13 @@ class PORTManager {
     }
 
     if (PORTInfo[precheck.PORT]) {
-      if (precheck.usingAny && PORTInfo[precheck.PORT].uses > 3) {
+      if (precheck.usingAny && PORTInfo[precheck.PORT].uses > this.maxPORTLimit - 1) {
         const PORT = PORTInfo[precheck.PORT];
         PORT.banned = true;
         PORT.uses = -1;
         precheck.usingAny = false;
         precheck.PORT = -1;
-        console.log(`Banned PORT being reusable. Exceeded 3 uses! (${PORT.PORT})`);
+        console.log(`Banned PORT being reusable. Exceeded ${this.maxPORTLimit} use${this.maxPORTLimit > 1 ? 's' : ''}! (${PORT.PORT})`);
       }
     }
 
