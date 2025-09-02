@@ -1,6 +1,9 @@
 # Revision
 <b>A brand new way</b> to bypass censorship using a dynamic PORT system.
 
+> [!WARNING]
+> I'm going to continue this project _later_, when ScramJet becomes more stable!
+
 > [!TIP]
 > This project is merely to show that _it can be done_, and I advise against production use!
 
