@@ -78,7 +78,7 @@ class PORTManager {
       } else if ((precheck.usingAny && precheck.PORT !== -1)) {
         if (!PORTInfo[precheck.PORT]) return;
         if (!PORTInfo[precheck.PORT].banned || !PORTInfo[precheck.PORT].uses > this.maxPORTLimit - 1) {
-          console.log("Using predetermined PORT for efficiency.");
+          console.log(`Using predetermined PORT for efficiency. (${precheck.PORT})`);
           PORTInfo[precheck.PORT].uses += 1;
           return precheck.PORT;
         }
