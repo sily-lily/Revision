@@ -62,6 +62,7 @@ if [[ "$localVersion" != "$remoteVersion" ]]; then
         echo "{ \"installed\": \"$remoteVersion\" }" | jq '.' > "$Cache"
         echo "Cloned ScramJet version $remoteVersion"
     fi
+    bash scripts/ScramJetInstaller.sh
 else
     echo "ScramJet is on the latest version ($localVersion)."
 fi
