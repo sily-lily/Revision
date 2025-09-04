@@ -26,3 +26,7 @@ After downloading the project using Git, install and launch the project using
 ```bash
 bash scripts/init.sh
 ```
+
+### Required Packages
+- [Node.js](https://nodejs.org/en/download)
+- [PNPM](https://pnpm.io)
