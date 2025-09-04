@@ -2,7 +2,7 @@
 <b>A brand new way</b> to bypass censorship using a dynamic PORT system.
 
 > [!WARNING]
-> This project is **only** supported on Linux/macOS :( <br>However, I am *trying* to make this work on Windows!!
+> This project is **only** supported on Linux/macOS, however, **I am *trying*** to make this work on Windows!! :3
 
 # F.A.Q.
 ## How's Revision _even useful_?
