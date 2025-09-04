@@ -36,7 +36,7 @@ if isWin; then
     rustup run nightly-x86_64-pc-windows-gnu bash ./rewriter/wasm/build.sh
     pnpm build
 else
-    curl --proto "=https" --tlsv1.2 --sSf https://sh.rustup.rs | sh
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
     source "$HOME/.cargo/env"
     pnpm i
     cargo install wasm-bindgen-cli --force
