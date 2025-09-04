@@ -1,5 +1,5 @@
 # Revision
-<b>A brand new way</b> to bypass censorship using a dynamic PORT system.
+A brand new ScramJet-based proxy server to circumvent internet censorship based off a brand new dynamic PORT changing system written in JavaScript 
 
 > [!WARNING]
 > This project is **only** supported on Linux/macOS, however, **I am *trying*** to make this work on Windows!! :3
