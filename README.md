@@ -18,7 +18,11 @@ Revision uses what I call a "dynamic PORT system", which changes the page you vi
 If you have _your own_ Linux environment, great! Use that! If not, you can use [Repl.it](https://replit.com) or [GitHub Codespaces](https://github.com/codespaces), whichever one you prefer the most.
 
 If using Codespaces, just create a new codespace, but if you're using a different environment, you can pull from the repository using `git`.
-> **`git pull https://github.com/sily-lily/Revision`**
+```bash
+git pull https://github.com/sily-lily/Revision
+```
 
 After downloading the project using Git, install and launch the project using
-### `bash scripts/init.sh`
+```bash
+bash scripts/init.sh
+```
