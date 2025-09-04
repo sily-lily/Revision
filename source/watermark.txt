@@ -1,0 +1,9 @@
+/**
+ *
+ *  Revision ~ A new way of evading online censorship
+ *   Contributors (1): Lily
+ *   GitHub: sily-lily | https://github.com/sily-lily/Revision
+ *
+ *  Thank you to MercuryWorkshop for the original proxy server! (ScramJet)
+ *
+ */

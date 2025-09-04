@@ -1,2 +1,3 @@
-node_modules
-ScramJet
+node_modules/
+ScramJet/
+source/server.js

@@ -1,1 +1,4 @@
 # Fix "./scripts/ScramJetInstaller.sh" for Windows, doesn't properly install dependencies.
+# After using "./source/clone.js", replace all imports from "./" to "./ScramJet/", probably using regex.
+# Add some basic environment variables to add PORT generation.
+# Finally, replace the UI files used in ScramJet with our own! We can just use fs.writeFileSync probably..

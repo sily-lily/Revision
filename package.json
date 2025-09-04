@@ -3,9 +3,6 @@
   "version": "1.0.1",
   "description": "A brand new way to bypass censorship using a dynamic PORT system",
   "main": "./source/server.js",
-  "scripts": {
-    "dev": "node source/server.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sily-lily/Revision.git"
@@ -17,7 +14,6 @@
   },
   "homepage": "https://github.com/sily-lily/Revision#readme",
   "dependencies": {
-    "express": "^5.1.0",
     "fs": "^0.0.1-security"
   },
   "module": "commonjs"
