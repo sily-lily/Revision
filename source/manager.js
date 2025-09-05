@@ -3,13 +3,13 @@ const { RNG } = require("./tools");
 const path = require("node:path");
 
 class PORTManager {
-  maxPORTLimit = JSON.parse(readFileSync(path.join("settings.json"), "utf-8")).maxPORTLimit;
+  maxPORTLimit = JSON.parse(readFileSync(path.join(process.cwd(), "..", "settings.json"), "utf-8")).maxPORTLimit;
   isBanned(PORT) {
     if (!PORT || PORT.length <= 0) {
       throw new Error(`Couldn't identify if "${PORT}" is banned.`);
     }
 
-    const parsed = JSON.parse(readFileSync(path.join("cache.json"), "utf-8"));
+    const parsed = JSON.parse(readFileSync(path.join(process.cwd(), "..", "cache.json"), "utf-8"));
     const PORTInfo = parsed.PORTInfo;
     var banned = false;
     for (const PORTkey in PORTInfo) {
@@ -38,7 +38,7 @@ class PORTManager {
 
   // Ignore my shitty code, please
   pickPORT() {
-    const parsed = JSON.parse(readFileSync(path.join("cache.json"), "utf-8"));
+    const parsed = JSON.parse(readFileSync(path.join(process.cwd(), "..", "cache.json"), "utf-8"));
     const precheck = parsed.precheck;
     const PORTInfo = parsed.PORTInfo;
     const check = () => {
@@ -97,7 +97,7 @@ class PORTManager {
     }
 
     check();
-    writeFileSync(path.join("cache.json"), JSON.stringify(parsed, null, "\t"));
+    writeFileSync(path.join(process.cwd(), "..", "cache.json"), JSON.stringify(parsed, null, "\t"));
     return precheck.PORT || precheck.PORT === -1 && 8000;
   }
 }

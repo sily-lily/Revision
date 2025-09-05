@@ -60,7 +60,7 @@ if [[ "$localVersion" != "$remoteVersion" ]]; then
             git clone https://github.com/MercuryWorkshop/ScramJet.git "$ScramJet"
         fi
         echo "{ \"installed\": \"$remoteVersion\" }" | jq '.' > "$Cache"
-        echo "PORT=6969" > "$ScramJet/.env"
+        echo "PORT=1337" > "$ScramJet/.env"
         echo "Cloned ScramJet version $remoteVersion"
     fi
     bash scripts/ScramJetInstaller.sh
