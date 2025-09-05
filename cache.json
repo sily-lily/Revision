@@ -1,18 +1,28 @@
 {
 	"precheck": {
 		"usingAny": true,
-		"PORT": 10560
+		"PORT": 23233
 	},
 	"PORTInfo": {
-		"10560": {
-			"uses": 1,
+		"23233": {
+			"uses": 2,
 			"banned": false,
-			"PORT": 10560
+			"PORT": 23233
 		},
-		"54684": {
+		"30176": {
 			"uses": -1,
 			"banned": true,
-			"PORT": 54684
+			"PORT": 30176
+		},
+		"47689": {
+			"uses": -1,
+			"banned": true,
+			"PORT": 47689
+		},
+		"55274": {
+			"uses": -1,
+			"banned": true,
+			"PORT": 55274
 		}
 	}
 }

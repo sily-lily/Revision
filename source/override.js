@@ -8,9 +8,18 @@ function ScramJetBuilt() {
 }
 
 if (ScramJetBuilt()) {
-    const server = fs.readFileSync(path.join(process.cwd(), "source", "clones", "server.js"), "utf-8");
-    fs.writeFileSync(path.join(process.cwd(), "ScramJet", "server.js"), server);
-    console.log("Modified ScramJet's server file successfully.");
+    console.log("Overriding ScramJet files ...");
+    try {
+        const server = fs.readFileSync(path.join(process.cwd(), "source", "clones", "server.js"), "utf-8");
+        const ui = fs.readFileSync(path.join(process.cwd(), "source", "clones", "static", "ui.js"), "utf-8");
+
+        fs.writeFileSync(path.join(process.cwd(), "ScramJet", "server.js"), server);
+        fs.writeFileSync(path.join(process.cwd(), "ScramJet", "static", "ui.js"), ui);
+    
+        console.log("Successfully replaced original ScramJet files!");
+    } catch (error) {
+        console.log(`Failed to replace ScramJet files :( (${error})`);
+    }
 } else {
     console.log("ScramJet hasn't been built yet. Initiate a build using: bash scripts/init.sh");
 }
