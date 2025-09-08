@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+    <head>
+		<link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>duck images - Google Search</title>
+		<script
+			defer
+			data-domain="scramjet.mercurywork.shop"
+			src="https://analytics.proudparrot2.com/js/script.js"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/dreamland"></script>
+		<script src="/baremux/index.js"></script>
+		<script src="/scram/scramjet.all.js"></script>
+		<script src="config.js"></script>
+		<script src="store.js"></script>
+		<style>
+			body {
+				background-color: rgb(15, 15, 15);
+				color: rgb(225, 225, 225);
+				font-size: 18px;
+				font-family: "Zilla Slab", serif;
+				font-weight: 400;
+				font-style: normal;
+				height: 100%;
+				margin: 0;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+			footer {
+				border-top-color: rgb(50, 50, 50);
+				border-top-style: solid;
+				background-color: rgb(20, 20, 20);
+				border-top-width: 1.5px;
+				width: 100%;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				overflow: hidden;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 10px;
+			}
+
+			a {
+				color: rgb(225, 225, 225);
+				text-decoration: none;
+			}
+
+			input {
+				background-color: transparent;
+				color: rgb(225, 225, 225);
+				border: none;
+				font-size: 18px;
+				font-family: "Zilla Slab", serif;
+				font-weight: 700;
+				font-style: normal;
+				width: 88%;
+				height: 92.5%;
+				padding-left: 14px;
+				padding-right: 14px;
+				letter-spacing: 2px;
+			}
+
+			input:focus {
+				outline: none;
+			}
+
+			::placeholder {
+				opacity: 35%;
+				color: rgb(200, 200, 200);
+			}
+
+			.noto-sans-jp {
+				font-family: "Noto Sans JP", sans-serif;
+				font-optical-sizing: auto;
+				font-weight: 400;
+				font-style: normal;
+			}
+
+			.center {
+				text-align: center;
+			}
+
+			.frame-container {
+				position: relative;
+				height: 100vh; /* full viewport height */
+			}
+
+			.frame {
+				position: absolute;
+				margin-top: 100px;
+				border: rgb(35, 35, 35) 2px dashed;
+				border-radius: 10px;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 500px;
+				height: 40px;
+				background-color: rgb(20, 20, 20);
+				transition: 0.2s;
+			}
+
+			.frame:hover {
+				transition: 0.2s;
+				border: rgb(50, 50, 50) 2px dashed;
+			}
+
+			.no-cursor {
+				caret-color: transparent;
+			}
+
+			.center-xy {
+				position: fixed;
+				top: 50%;
+				left: 50%;
+			}
+		</style>
+		<script src="ui.js"></script> <!-- Main search engine logic -->
+	</head>
+	<body style="margin:0; height:100vh; display:flex; align-items:center; justify-content:center;">
+		<div>
+			<h1 style="margin-top: -60px" class="center">
+				Revision
+				<span style="opacity: 85%" class="noto-sans-jp">リビジョン</span>
+			</h1>
+			<p class="center">
+				<b>A brand new way</b> to bypass censorship using a dynamic PORT system
+			</p>
+			<p class="center" style="color: rgb(200, 200, 200); margin-top: -10px;"><b>
+				Based on the lightweight
+				<a href="https://github.com/MercuryWorkshop/ScramJet" target="_blank">
+					<span style="opacity: 85%; color: orange;"><i>ScramJet</i></span>
+				</a> proxy server ~
+			</b></p>
+			<div class="frame">
+				<input class="no-cursor" placeholder="Search freely on DuckDuckGo ..." />
+				<svg style="opacity: 50%; margin-top: -3px; margin-right: 7.5px; margin-left: -6px; vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+			</div>
+			<div class="center" style="margin-top: 220px;">
+				<h2>Thank You ❤️</h2>
+				<ul style="list-style: none; padding: 0; margin: 0; margin-top: -10px; display: flex; flex-direction: column; gap: 10px;">
+					<!--<li><b>
+						<a href="https://github.com/sily-lily" target="_blank">
+							<i>Lily</i>
+						</a>
+					</b> ~ Owner and primary maintainer of the Revision project</li>-->
+					<li><b>
+						<a href="https://github.com/MercuryWorkshop/ScramJet" target="_blank">
+							<i>Mercury Workshop</i>
+						</a></b> ~ ScramJet proxy server</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<!---->
+	<footer>
+		<svg class="center" width="25" height="25">
+			<image xlink:href="https://github.com/sily-lily/Revision/blob/1bde2322cdb28d5121d7f93d82b8aac62db87cb1/public/assets/GitHub.svg" width="25" height="25">
+		</svg>
+		<p class="center"><b>
+			<a href="https://github.com/sily-lily/Revision" target="_blank">
+				Support us on GitHub
+			</a>
+		</b> <span style="opacity: 25%;">
+			• <b>Want to help</b>? Contact me on <a href="discord.com/users/1002377371892072498" target="_blank">
+				<i><b>Discord</b></i>
+			</a> for more information! (<b>sily.lily</b>)</p>
+		</span>
+	</footer>
+</html>

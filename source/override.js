@@ -10,11 +10,18 @@ function ScramJetBuilt() {
 if (ScramJetBuilt()) {
     console.log("Overriding ScramJet files ...");
     try {
+        // Literally the least efficient way of doing this,
+        //  but I don't care :3
+
         const server = fs.readFileSync(path.join(process.cwd(), "source", "clones", "server.js"), "utf-8");
         const ui = fs.readFileSync(path.join(process.cwd(), "source", "clones", "static", "ui.js"), "utf-8");
+        const index = fs.readFileSync(path.join(process.cwd(), "source", "clones", "static", "index.html"))
+        const store = fs.readFileSync(path.join(process.cwd(), "source", "clones", "static", "store.js"))
 
         fs.writeFileSync(path.join(process.cwd(), "ScramJet", "server.js"), server);
         fs.writeFileSync(path.join(process.cwd(), "ScramJet", "static", "ui.js"), ui);
+        fs.writeFileSync(path.join(process.cwd(), "ScramJet", "static", "index.html"), index);
+        fs.writeFileSync(path.join(process.cwd(), "ScramJet", "static", "store.js"), store);
     
         console.log("Successfully replaced original ScramJet files!");
     } catch (error) {

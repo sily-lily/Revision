@@ -1,3 +1,12 @@
+/**
+ * 
+ *  Modified verison of ScramJet's config, just replacing
+ *   the default search engine to DuckDuckGo.
+ * 
+ *  I'm doing this because Google has captchas for suspicious IPs/proxy detection.
+ * 
+ */
+
 const store = $store(
 	{
 		url: "https://duckduckgo.com",
