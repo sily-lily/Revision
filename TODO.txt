@@ -1,3 +1,2 @@
 # Fix "./scripts/ScramJetInstaller.sh" for Windows, doesn't properly install dependencies.
-# Write a script in "./scripts/" to install the latest version of NodeJS (then install PNPM) if not on the latest.
-# Finally, replace the UI files used in ScramJet with our own! We can just use fs.writeFileSync probably..
+# Get our ui.js file to sync the frontend from the public folder.
