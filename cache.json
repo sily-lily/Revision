@@ -1,38 +1,7 @@
 {
 	"precheck": {
-		"usingAny": true,
-		"PORT": 51324
+		"usingAny": false,
+		"PORT": -1
 	},
-	"PORTInfo": {
-		"23233": {
-			"uses": -1,
-			"banned": true,
-			"PORT": 23233
-		},
-		"30176": {
-			"uses": -1,
-			"banned": true,
-			"PORT": 30176
-		},
-		"47689": {
-			"uses": -1,
-			"banned": true,
-			"PORT": 47689
-		},
-		"51324": {
-			"uses": 2,
-			"banned": false,
-			"PORT": 51324
-		},
-		"55274": {
-			"uses": -1,
-			"banned": true,
-			"PORT": 55274
-		},
-		"62194": {
-			"uses": -1,
-			"banned": true,
-			"PORT": 62194
-		}
-	}
+	"PORTInfo": {}
 }
