@@ -1,14 +1,3 @@
-/**
- * 
- *  I can't believe how poorly coded ScramJet files are..
- * 
- *  I tried to remove all of their UI (if I remade it) and 
- *   replaced it with mine.
- * 
- *  Hopefully, this should look better..
- * 
- */
-
 const { ScramjetController } = $scramjetLoadController();
 
 const scramjet = new ScramjetController({

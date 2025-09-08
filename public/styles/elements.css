@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(15, 15, 15);
+    color: rgb(225, 225, 225);
+    font-size: 18px;
+    font-family: "Zilla Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 100%;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+footer {
+    border-top-color: rgb(50, 50, 50);
+    border-top-style: solid;
+    background-color: rgb(20, 20, 20);
+    border-top-width: 1.5px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+a {
+    color: rgb(225, 225, 225);
+    text-decoration: none;
+}
+
+input {
+    background-color: transparent;
+    color: rgb(225, 225, 225);
+    border: none;
+    font-size: 18px;
+    font-family: "Zilla Slab", serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 88%;
+    height: 92.5%;
+    padding-left: 14px;
+    padding-right: 14px;
+    letter-spacing: 2px;
+}
+
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    opacity: 35%;
+    color: rgb(200, 200, 200);
+}
