@@ -29,6 +29,11 @@ if isWin; then
 else
     remoteVersion=$(curl -s "$URL" | jq -r '.version')
 fi
+cd "$ScramJet"
+if [ "$localVersion" != "-1" ] && [ ! -d "node_modules" ]; then
+    pnpm i
+fi
+cd ..
 if [[ "$localVersion" != "$remoteVersion" ]]; then
     echo "Version mismatch or uninitialized, reinstalling ScramJet..."
     if isWin; then
@@ -51,6 +56,7 @@ if [[ "$localVersion" != "$remoteVersion" ]]; then
         "
         echo "Cloned ScramJet version $remoteVersion"
     else
+        echo '{ "precheck": { "usingAny": false, "PORT": -1 }, "PORTInfo": {} }' | jq '.' > cache.json
         if [ -d "$ScramJet/.git" ]; then
             cd "$ScramJet"
             git reset --hard
