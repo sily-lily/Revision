@@ -1,3 +1,4 @@
+bash scripts/node.sh
 bash scripts/downloader.sh
 
 # echo "As of 9/3/2025, Revision does not support Windows!"

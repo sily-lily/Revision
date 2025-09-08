@@ -11,12 +11,22 @@ importers:
       fs:
         specifier: ^0.0.1-security
         version: 0.0.1-security
+      pnpm:
+        specifier: ^10.15.1
+        version: 10.15.1
 
 packages:
 
   fs@0.0.1-security:
     resolution: {integrity: sha512-3XY9e1pP0CVEUCdj5BmfIZxRBTSDycnbqhIOGec9QYtmVH2fbLpj86CFWkrNOkt/Fvty4KZG5lTglL9j/gJ87w==}
 
+  pnpm@10.15.1:
+    resolution: {integrity: sha512-NOU4wym1VTAUyo6PRTWZf5YYCh0PYUM5NXRJk1NQ2STiL4YUaCGRJk7DPRRirCFWGv+X9rsYBlNRwWLH6PbeZw==}
+    engines: {node: '>=18.12'}
+    hasBin: true
+
 snapshots:
 
   fs@0.0.1-security: {}
+
+  pnpm@10.15.1: {}

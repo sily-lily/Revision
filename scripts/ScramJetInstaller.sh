@@ -1,6 +1,5 @@
 #!/bin/bash
 set -euxo pipefail
-
 isWin() {
     case "$OSTYPE" in
         msys*|cygwin*|win32*) return 0 ;;

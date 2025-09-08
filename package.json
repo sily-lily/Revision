@@ -14,7 +14,8 @@
   },
   "homepage": "https://github.com/sily-lily/Revision#readme",
   "dependencies": {
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "pnpm": "^10.15.1"
   },
   "module": "commonjs"
 }
