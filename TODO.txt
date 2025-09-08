@@ -1,2 +1,2 @@
 # Fix "./scripts/ScramJetInstaller.sh" for Windows, doesn't properly install dependencies.
-# Get our ui.js file to sync the frontend from the public folder.
+# Add proper proxy functionality to the search bar
