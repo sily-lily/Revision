@@ -1,32 +1,20 @@
 # Revision
-A brand new ScramJet-based proxy server to circumvent internet censorship based off a brand new dynamic PORT changing system written in JavaScript 
+An easy to use self hosted [ScramJet](https://github.com/MercuryWorkshop/ScramJet) based proxy useful for evading internet censorship and getting access to previously restricted websites using a proof of concept port changing design to constantly remain in an unblocked state.
 
+### Installation
 > [!WARNING]
-> This project is **only** supported on Linux/macOS, however, **I am *trying*** to make this work on Windows!! :3
+> Installation usually takes a few minutes, installing during a moment where you have **~15 minutes free** is recommended.
 
-# F.A.Q.
-## How's Revision _even useful_?
-Revision uses what I call a "dynamic PORT system", which changes the page you visit Revision on **every 3 visits**, which in-turn, helps void censorship from common extensions like [Securly](https://www.securly.com/) or [GoGuardian](https://www.goguardian.com/).
-> **Keep in Mind**: There's also a setting to change the URL **every visit**, or however much you want. (Recommended if administrators constantly block the website)
+Revision is intended to be used in a Linux environment using [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) (.sh), however, Windows may work if you have [Git Bash](https://git-scm.com/downloads) installed.
 
-# Usage Guide
-1. To use Revision, you **must** have access to a place like: [Repl.it](https://replit.com), [GitHub Codespaces](https://github.com/codespaces), or anywhere else you can host files that'll give you a free domain in return.
+[GitHub Codespaces](https://github.com/codespaces) _is recommended_ for self hosting as it serves Revision on a URL with the port built in. Create a new Codespace by clicking the green "**Code**" button, then clicking the plus (**+**) to create a new environment.
 
-2. Revision is self-hosting **only**, we do not provide links for you, simply because administrators can easily block the main URL (Example: **Revision.com**), or only have whitelisted sites, such as [Repl.it](https://replit.com).
-
-# Install
-If you have _your own_ Linux environment, great! Use that! If not, you can use [Repl.it](https://replit.com) or [GitHub Codespaces](https://github.com/codespaces), whichever one you prefer the most.
-
-If using Codespaces, just create a new codespace, but if you're using a different environment, you can pull from the repository using `git`.
-```bash
-git pull https://github.com/sily-lily/Revision
-```
-
-After downloading the project using Git, install and launch the project using
+Once a new Codespace has been made and you have all of the project files, run the script below to automatically install, update, and run ScramJet with Revision installed.
 ```bash
 bash scripts/init.sh
 ```
 
-### Required Packages
-- [Node.js](https://nodejs.org/en/download)
-- [PNPM](https://pnpm.io)
+---
+
+### Thank You ❤️
+- [ScramJet](https://github.com/MercuryWorkshop/ScramJet) ~ Base proxy server and original inspiration for Revision
