@@ -1,7 +1,7 @@
 # Revision
 An easy to use self hosted [ScramJet](https://github.com/MercuryWorkshop/ScramJet) based proxy useful for evading internet censorship and getting access to previously restricted websites using a proof of concept port changing design to constantly remain in an unblocked state.
 
-### Installation
+### Installing and Using Revision 🚀
 > [!WARNING]
 > Installation usually takes a few minutes, installing during a moment where you have **~15 minutes free** is recommended.
 
@@ -18,3 +18,4 @@ bash scripts/init.sh
 
 ### Thank You ❤️
 - [ScramJet](https://github.com/MercuryWorkshop/ScramJet) ~ Base proxy server and original inspiration for Revision
+
