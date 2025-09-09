@@ -19,7 +19,6 @@ fi
 cd ..
 if [[ "$localVersion" != "$remoteVersion" ]]; then
     echo "Version mismatch or uninitialized, reinstalling ScramJet..."
-
     echo '{ "precheck": { "usingAny": false, "PORT": -1 }, "PORTInfo": {} }' | jq '.' > cache.json
     if [ -d "$ScramJet/.git" ]; then
         cd "$ScramJet"
