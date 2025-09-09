@@ -19,3 +19,4 @@ bash scripts/init.sh
 ### Thank You ❤️
 - [ScramJet](https://github.com/MercuryWorkshop/ScramJet) ~ Base proxy server and original inspiration for Revision
 
+Any issues? [Reach out to me on Discord](https://discord.com/users/1002377371892072498) and I can try and help :3
