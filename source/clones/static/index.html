@@ -49,6 +49,7 @@
 				justify-content: center;
 				align-items: center;
 				gap: 10px;
+				z-index: 9999;
 			}
 
 			a {
@@ -75,6 +76,12 @@
 				outline: none;
 			}
 
+			iframe {
+				height: 100vh;
+				width: 100%;
+				border: none;
+			}
+
 			::placeholder {
 				opacity: 35%;
 				color: rgb(200, 200, 200);
@@ -93,7 +100,7 @@
 
 			.frame-container {
 				position: relative;
-				height: 100vh; /* full viewport height */
+				height: 100vh;
 			}
 
 			.frame {
@@ -118,6 +125,24 @@
 				caret-color: transparent;
 			}
 
+			.search-bar {
+				text-align: center;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				opacity: 50%;
+				transition-duration: 0.2s;
+			}
+
+			.search-bar:focus {
+				opacity: 100%;
+				transition-duration: 0.3s;
+			}
+
+			.search-bar:hover {
+				opacity: 100%;
+				transition-duration: 0.3s;
+			}
+
 			.center-xy {
 				position: fixed;
 				top: 50%;
@@ -126,7 +151,7 @@
 		</style>
 		<script src="ui.js"></script> <!-- Main search engine logic -->
 	</head>
-	<body style="margin:0; height:100vh; display:flex; align-items:center; justify-content:center;">
+	<body id="app" style="margin:0; height:100vh; display:flex; align-items:center; justify-content:center;">
 		<div>
 			<h1 style="margin-top: -60px" class="center">
 				Revision
@@ -142,7 +167,7 @@
 				</a> proxy server ~
 			</b></p>
 			<div class="frame">
-				<input class="no-cursor" placeholder="Search freely on DuckDuckGo ..." />
+				<input id="search" class="no-cursor" autocomplete="off" autocapitalize="off" placeholder="Provide any link and access now ..." value="https://duckduckgo.com" />
 				<svg style="opacity: 50%; margin-top: -3px; margin-right: 7.5px; margin-left: -6px; vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
 			</div>
 			<div class="center" style="margin-top: 220px;">
@@ -164,7 +189,7 @@
 	<!---->
 	<footer>
 		<svg class="center" width="25" height="25">
-			<image xlink:href="https://github.com/sily-lily/Revision/blob/1bde2322cdb28d5121d7f93d82b8aac62db87cb1/public/assets/GitHub.svg" width="25" height="25">
+			<image xlink:href="https://raw.githubusercontent.com/sily-lily/Revision/1bde2322cdb28d5121d7f93d82b8aac62db87cb1/public/assets/GitHub.svg" width="25" height="25">
 		</svg>
 		<p class="center"><b>
 			<a href="https://github.com/sily-lily/Revision" target="_blank">
