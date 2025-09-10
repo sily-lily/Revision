@@ -1,1 +1,0 @@
-# Fix "./scripts/ScramJetInstaller.sh" for Windows, doesn't properly install dependencies.
