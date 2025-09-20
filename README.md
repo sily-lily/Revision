@@ -20,3 +20,12 @@ bash scripts/init.sh
 - [ScramJet](https://github.com/MercuryWorkshop/ScramJet) ~ Base proxy server and original inspiration for Revision
 
 Any issues? [Reach out to me on Discord](https://discord.com/users/1002377371892072498) and I can try and help :3
+
+---
+
+### Setup Video
+Confused? Watch this video to learn how to set it up in **one command**!
+
+
+https://github.com/user-attachments/assets/3cad1a9c-3ff2-4a9a-807a-39893ee8f1e6
+
