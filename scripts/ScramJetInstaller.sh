@@ -1,16 +1,17 @@
 #!/bin/bash
 set -euo pipefail
 cd ScramJet/rewriter/wasm
-ls
 if ! command -v rustc &> /dev/null; then
     echo "Rust not installed. Installing Rust..."
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 fi
 source "$HOME/.cargo/env"
+export PATH="$HOME/.cargo/bin:$PATH"
 rustup install nightly
 rustup update nightly
 rustup default nightly
 rustup override set nightly
+rustup component add rust-src --toolchain nightly-x86_64-unknown-linux-gnu
 Panic="$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panicking.rs"
 if [ -f "$Panic" ]; then
     sed -i '/#\[cfg(feature = "panic_immediate_abort")\]/, /);/ s/^/\/\//' "$Panic"
