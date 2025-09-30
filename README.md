@@ -5,7 +5,7 @@ An easy to use self hosted [ScramJet](https://github.com/MercuryWorkshop/ScramJe
 ---
 
 ### Installing and Using Revision
-Revision is intended to be used in a Linux environment using [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) (.sh), however, Windows may work if you have [Git Bash](https://git-scm.com/downloads) installed.
+Revision is intended to be used in a Linux environment using [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) (.sh), however, ~~Windows may work if you have [Git Bash](https://git-scm.com/downloads) installed~~.
 
 [GitHub Codespaces](https://github.com/codespaces) _is recommended_ for self hosting as it serves Revision on a URL with the port built in. Create a new Codespace by clicking the green "**Code**" button, then clicking the plus (**+**) to create a new environment.
 
@@ -26,6 +26,4 @@ Any issues? [Reach out to me on Discord](https://discord.com/users/1002377371892
 ### Setup Video
 Confused? Watch this video to learn how to set it up in **one command**!
 
-
-https://github.com/user-attachments/assets/3cad1a9c-3ff2-4a9a-807a-39893ee8f1e6
-
+https://github.com/user-attachments/assets/b0998cc1-5281-49ab-8e95-970bd86c712e
