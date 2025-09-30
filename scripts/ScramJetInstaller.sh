@@ -1,5 +1,4 @@
 #!/bin/bash
-set -euo pipefail
 cd ScramJet
 if ! command -v rustc &> /dev/null; then
   echo "Rust not installed. Installing Rust..."
