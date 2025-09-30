@@ -31,6 +31,9 @@ const ScramJet = new ScramjetController({
 ScramJet.init();
 navigator.serviceWorker.register("./sw.js");
 
+const connection = new BareMux.BareMuxConnection("/baremux/worker.js");
+connection.setTransport("/epoxy/index.mjs", [{ wisp: _CONFIG?.wispurl || (location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/wisp/" }]);
+
 function showWebContent(body, frame) {
     body.innerHTML = "";
     body.appendChild(frame.frame);
@@ -53,10 +56,8 @@ function showWebContent(body, frame) {
 	});
 }
 
-const connection = new BareMux.BareMuxConnection("/baremux/worker.js");
-connection.setTransport(store.transport, [{ wisp: store.wispurl }]);
 document.addEventListener("DOMContentLoaded", function() {
-	var URL = store.url;
+	var URL = "https://duckduckgo.com";
 	const frame = ScramJet.createFrame();
 	const search = document.getElementById("search");
 	const body = document.getElementById("app");
