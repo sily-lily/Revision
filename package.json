@@ -5,14 +5,14 @@
   "main": "./source/server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sily-lily/Revision.git"
+    "url": "git+https://github.com/transicle/Revision.git"
   },
-  "author": "sily-lily",
+  "author": "transicle",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sily-lily/Revision/issues"
+    "url": "https://github.com/transicle/Revision/issues"
   },
-  "homepage": "https://github.com/sily-lily/Revision#readme",
+  "homepage": "https://github.com/transicle/Revision#readme",
   "dependencies": {
     "fs": "^0.0.1-security",
     "pnpm": "^10.15.1"
